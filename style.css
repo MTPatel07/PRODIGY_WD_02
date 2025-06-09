@@ -1,0 +1,92 @@
+/* General body style */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Container animation */
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  animation: popUp 0.8s ease-out;
+}
+
+/* Time display */
+.display {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Buttons */
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Button hover effect */
+.buttons button:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Lap list container */
+.lap-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Lap list item with slide-in */
+.lap-list li {
+  background: #2d2d2d;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: #e2e8f0;
+  animation: slideIn 0.4s ease forwards;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popUp {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+/*js.css*/
+.pulse {
+  animation: pulseEffect 0.3s ease;
+}
+
+@keyframes pulseEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(100); }
+}
