@@ -65,4 +65,4 @@ stopwatch/
 
 ## 👩‍💻 Author
 
-**Mahek Trambadia**  
+**Mahek Patel**  
